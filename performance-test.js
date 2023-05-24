@@ -7,5 +7,5 @@ export const options = {
 }
 
 export default function() {
-    http.get("http://localhost:5031/WeatherForecast/GetSync")
+    http.get("http://localhost:5031/WeatherForecast/${__ENV.METHOD}")
 }
